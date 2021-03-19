@@ -1,9 +1,6 @@
-name: deploy-on-push-and-schedule
+name: deploy-on-manual-trigger
 
-on:
-  push:
-  schedule:
-    - cron:  '0 17 * * *'
+on: 
   workflow_dispatch:
     inputs:
       logLevel:
